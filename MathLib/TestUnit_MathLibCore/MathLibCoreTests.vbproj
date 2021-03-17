@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MathLibCoreTest</RootNamespace>
+    <AssemblyName>TestUnit_MathLibCore</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ReferencePath>$(DevEnvDir)PublicAssemblies\</ReferencePath>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestUnit_MathLibCore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TestUnit_MathLibCore.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="algebraTests\Binary\Test_IsBinary.vb" />
+    <Compile Include="algebraTests\Hexadecimal\Test_IsHexadecimal.vb" />
+    <Compile Include="algebraTests\Matrix\Test_Cramer2.vb" />
+    <Compile Include="algebraTests\Matrix\Test_RotationMatrix.vb" />
+    <Compile Include="algebraTests\Matrix\Test_GetFromPoint.vb" />
+    <Compile Include="algebraTests\Matrix\Test_Transpose.vb" />
+    <Compile Include="algebraTests\RangeTests.vb" />
+    <Compile Include="algebraTests\RangeCollectionTests.vb" />
+    <Compile Include="algebraTests\RangeCheckResultTests.vb" />
+    <Compile Include="CommonTests\Conversion\Test_Angle.vb" />
+    <Compile Include="CommonTests\Vector\Test_RotateAroundBase.vb" />
+    <Compile Include="CommonTests\Vector\Test_Translation.vb" />
+    <Compile Include="CommonTests\Vector\Test_DotProduct.vb" />
+    <Compile Include="CommonTests\Vector\Test_Rotate.vb" />
+    <Compile Include="GeneralTests\Test_Pow10.vb" />
+    <Compile Include="GeneralTests\Test_AreEquals.vb" />
+    <Compile Include="GeneralTests\Test_Pow.vb" />
+    <Compile Include="GeometryTests\Circle\Test_Tangent.vb" />
+    <Compile Include="GeometryTests\Line\Test_Parallel.vb" />
+    <Compile Include="GeometryTests\Point\Test_Intersection.vb" />
+    <Compile Include="GeometryTests\Point\Test_Rotate.vb" />
+    <Compile Include="GeometryTests\Polygon\Test_Parallel.vb" />
+    <Compile Include="GeometryTests\Triangle\Test_OppositeLenght.vb" />
+    <Compile Include="GeometryTests\Trigonometry\Test_Cos.vb" />
+    <Compile Include="GeometryTests\Trigonometry\Test_Sin.vb" />
+    <Compile Include="GeometryTests\Angle\Test_Convert.vb" />
+    <Compile Include="GeometryTests\Angle\Test_GetFromVector.vb" />
+    <Compile Include="GeometryTests\Line\Test_GetEquation.vb" />
+    <Compile Include="GeometryTests\Point\Test_IsOnTheLine.vb" />
+    <Compile Include="GeometryTests\Polygon\Test_Area.vb" />
+    <Compile Include="GeometryTests\Polygon\Test_GravityCenter.vb" />
+    <Compile Include="GeometryTests\Polygon\Test_ProjectionPt.vb" />
+    <Compile Include="GeometryTests\Trigonometry\Test_OppositeLenght.vb" />
+    <Compile Include="ItemsTests\Angle\Test_ModuloValue.vb" />
+    <Compile Include="ItemsTests\Angle\Test_OpSoustaction.vb" />
+    <Compile Include="ItemsTests\Graph\Edge\Test_OpEquals.vb" />
+    <Compile Include="ItemsTests\Graph\Test_IsConnected.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_Cofactor.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_Minor.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_RemoveCol.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_RemoveRow.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_FromString.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_Det.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_OpSubstraction.vb" />
+    <Compile Include="GeometryTests\Point\Test_Translation.vb" />
+    <Compile Include="ItemsTests\Point\Test_OpEquals.vb" />
+    <Compile Include="ItemsTests\Point\Test_Clone.vb" />
+    <Compile Include="ItemsTests\Vector\Test_Reverse.vb" />
+    <Compile Include="ItemsTests\Vector\Test_Norme.vb" />
+    <Compile Include="ItemsTests\Vector\Test_OpNotEquals.vb" />
+    <Compile Include="ItemsTests\Vector\Test_OpEquals.vb" />
+    <Compile Include="ItemsTests\Vector\Test_IsSameNorme.vb" />
+    <Compile Include="ItemsTests\Vector\Test_IsSameDirection.vb" />
+    <Compile Include="ItemsTests\Vector\Test_IsSameWay.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ItemsTests\LineEquation\Test_ToString.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_OpAddition.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_OpMultiplication.vb" />
+    <Compile Include="ItemsTests\Matrix\Test_ToString.vb" />
+    <Compile Include="ItemsTests\Point\Test_OpSoustaction.vb" />
+    <Compile Include="ItemsTests\Point\Test_OpAddition.vb" />
+    <Compile Include="ItemsTests\Vector\Test_OpAddition.vb" />
+    <Compile Include="ItemsTests\Vector\Test_ToString.vb" />
+    <Compile Include="MathTest.vb" />
+    <Compile Include="Test_Math_Graph.vb" />
+    <Compile Include="UnitTestHelper.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MathLibCore\MathLibCore.vbproj">
+      <Project>{B87A0241-0473-4673-9E45-F2DC9951343A}</Project>
+      <Name>MathLibCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ItemsTests\Graph\Node\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

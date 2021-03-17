@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1A31729-D77F-4729-BBD2-E50481DA4B26}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MathLib.vsmdi = MathLib.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MathLibCore", "MathLibCore\MathLibCore.vbproj", "{B87A0241-0473-4673-9E45-F2DC9951343A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MathLibCoreTests", "TestUnit_MathLibCore\MathLibCoreTests.vbproj", "{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Test", "Test\Test.vbproj", "{45C599B1-526E-4179-A183-51F6DCB7FD41}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs04
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MathLibCore\\MathLibCore.vbproj
+		SccProjectName1 = MathLibCore
+		SccLocalPath1 = MathLibCore
+		SccProjectUniqueName2 = Test\\Test.vbproj
+		SccProjectName2 = Test
+		SccLocalPath2 = Test
+		SccProjectUniqueName3 = TestUnit_MathLibCore\\MathLibCoreTests.vbproj
+		SccProjectName3 = TestUnit_MathLibCore
+		SccLocalPath3 = TestUnit_MathLibCore
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MathLib.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B87A0241-0473-4673-9E45-F2DC9951343A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87A0241-0473-4673-9E45-F2DC9951343A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87A0241-0473-4673-9E45-F2DC9951343A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87A0241-0473-4673-9E45-F2DC9951343A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E566176-5EA1-4BB2-BBB3-470B0A3FC228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C599B1-526E-4179-A183-51F6DCB7FD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C599B1-526E-4179-A183-51F6DCB7FD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C599B1-526E-4179-A183-51F6DCB7FD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C599B1-526E-4179-A183-51F6DCB7FD41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
